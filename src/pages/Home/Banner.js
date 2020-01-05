@@ -1,10 +1,10 @@
 import React from 'react';
-import banner from '../static/images/banner.svg';
-import bannerMobile from '../static/images/banner-mobile.svg';
-import underline from '../static/images/primary-underline.svg';
-const Home = () => {
+import banner from 'static/images/banner.svg';
+import bannerMobile from 'static/images/banner-mobile.svg';
+import underline from 'static/images/primary-underline.svg';
+const Banner = () => {
     return (
-        <div className="home">
+        <div className="banner">
             <img id="desktop-banner" src={banner} alt="Banner" />
             <img id="mobile-banner" src={bannerMobile} alt="Banner" />
             <div className="container">
@@ -18,4 +18,4 @@ const Home = () => {
         </div>
     );
 }
-export default Home;
+export default Banner;

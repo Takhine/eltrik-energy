@@ -2,7 +2,7 @@ import React from 'react';
 
 const Dealers = () =>{
     return(
-        <div>
+        <div style={{color:'black'}}>
         Dealers
         </div>
     );

@@ -5,7 +5,7 @@ import {
   Switch,
   Redirect
 } from 'react-router-dom';
-import Home from './pages/Home';
+import Home from './pages/Home/index.js';
 import Layout from './Layout/index';
 function App() {
   return (
