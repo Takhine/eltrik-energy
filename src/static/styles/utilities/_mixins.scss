@@ -69,19 +69,18 @@
 
 @mixin  primary-button {
     color: white;
-    background-color: $primary-purple;
-    border-radius: 16px;
-    width: 80px;
-    height: 25px;
+    background-color: $primary-yellow;
+    border-radius: 4px;
+    padding: 5px 10px;
     display: block;
     border: none;
     cursor: pointer;
     transition: $transition-main;
 
     &:hover{
-        color: $primary-purple;
-        background-color: white;
-        border: 1px solid $primary-purple;
+        color: $primary-yellow;
+        background-color: transparent;
+        border: 1px solid $primary-yellow;
         transition: $transition-main;
     }
 }
