@@ -1,0 +1,53 @@
+.eltrik{
+    @extend .container;
+    .main-title{
+        width: 150px;
+        padding-top: 20px;
+        margin: auto;
+        margin-bottom: 16px;
+        @include sm{
+            margin: unset;
+            width: 200px;
+            padding-top: 40px;
+        }
+        @include md{
+            width: 250px;
+            padding-top: 60px;
+        }
+        .title{
+            font-size: 18px;
+            margin-left: 28px;
+            @include sm{
+                font-size: $title-font;
+            }
+            @include md{
+                font-size: $large-font;
+            }
+        }
+        .title-underline{
+            width: inherit;
+        }
+    }
+    .image-container{
+        .avenue-image{
+            width: 100%;
+        }
+    }
+    .avenue-description{
+        font-size: $xsmall-font;
+        font-weight: $bold-font;
+        text-align: justify;
+        @include md{
+            font-size: $subtitle-font;
+        }
+        .subtitle{
+            color: $primary-blue;
+            margin: 16px 0;
+        }
+        .requirements-link{
+            display: inline;
+            color: $primary-yellow;
+            font-weight: $bold-font;
+        }
+    }
+}
