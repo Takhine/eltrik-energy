@@ -93,6 +93,23 @@
     height: 25px;
     display: block;
 }
+@mixin dark-button{
+    color: white;
+    background-color: $dark-black;
+    border-radius: 4px;
+    padding: 5px 10px;
+    display: block;
+    border: none;
+    cursor: pointer;
+    transition: $transition-main;
+
+    &:hover{
+        color: $dark-black;
+        background-color: transparent;
+        border: 1px solid $dark-black;
+        transition: $transition-main;
+    }
+}
 
 // Cards
 

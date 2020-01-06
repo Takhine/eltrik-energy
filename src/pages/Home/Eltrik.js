@@ -27,7 +27,7 @@ const Eltrik = () => {
                     <p style={{display:'inline'}}>ELTRIK ENERGY INDIA, proposes to set up “ELTRIK AVENUE” Battery Swapping Service for E-Rickshaw, every few kilometers in metros, class I and class II towns across the country. </p>
                     <a href="#" className="requirements-link">Requirements</a>
                     <h3 className="subtitle">Download Dealership Form</h3>
-                    <Button>Download</Button>
+                    <Button className="download-button">Download</Button>
                     </div>
                 </Grid>
             </Grid>

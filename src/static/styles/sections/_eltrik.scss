@@ -50,4 +50,7 @@
             font-weight: $bold-font;
         }
     }
+    .download-button{
+        @include dark-button;
+    }
 }
