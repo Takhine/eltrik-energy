@@ -1,0 +1,21 @@
+.dealership{
+    @extend .container;
+    padding-top: 0;
+    color: $dark-black;
+    p{
+        font-size: $xsmall-font;
+        font-weight: $bold-font;
+        margin-top: 16px;
+        @include md{
+            font-size: $subtitle-font;
+        }
+    }
+    .image-container{
+        display: flex;
+        justify-content: center;
+        .auto-image{
+            width: 100%;
+            max-width: 350px;
+        }
+    }
+}

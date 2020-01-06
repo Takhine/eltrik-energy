@@ -1,0 +1,100 @@
+.banner{
+    margin-bottom: 40px;
+    height: 60vh;
+    color: white;
+    @media (orientation:portrait) and (max-height:830px){
+        height: 70vh;
+        margin-bottom: 20px;
+    }
+    @media (orientation:portrait) and (max-height:820px) and (min-height:750px){
+        height: 60vh;
+        margin-bottom: 20px;
+    }
+    @media (orientation:portrait) and (min-height:830px){
+        height: 40vh;
+    }
+    @media (orientation:landscape) and (max-height:420px) {
+        height: 100vh;
+        margin-bottom: 10px;
+    }
+    @include xl{
+        height: 80vh;
+        margin-bottom: 20px;
+    }
+    @include xxl{
+        @media(max-height:840px){
+        height: 100vh;
+        margin-bottom: 10px;
+        }
+    }
+    @include xxxl{
+        margin-bottom: 60px;
+    }
+    #desktop-banner{
+        display: none;
+        width: 100.53%;
+        margin-left: -7.9px;
+        position: absolute;
+        z-index: -1;
+        @include sm{
+            display: block;
+            margin-top: -10px;
+        }
+        @include lg{
+            margin-top: -100px;
+        }
+    }
+    #mobile-banner{
+        display: block;
+        width: 102%;
+        margin-left: -6.9px;
+        margin-top: -50px;
+        position: absolute;
+        z-index: -1;
+        @include sm{
+            display: none;
+        }
+    }
+    .main-title{
+        width: 200px;
+        padding-top: 20px;
+        margin: auto;
+        @include sm{
+            margin: unset;
+            width: 250px;
+            padding-top: 40px;
+        }
+        @include md{
+            width: 300px;
+            padding-top: 60px;
+        }
+        .title{
+            font-size: 18px;
+            margin-left: 20px;
+            @include sm{
+                font-size: $title-font;
+
+            }
+            @include md{
+                font-size: $large-font;
+            }
+        }
+        .title-underline{
+            width: inherit;
+        }
+    }
+    .description{
+        font-size: $xsmall-font;
+        max-width: 300px;
+        font-weight: $bold-font;
+        @include md{
+            font-size: $subtitle-font;
+            max-width: 450px;
+        }
+    }
+    .banner-button{
+        @include primary-button;
+        margin-top: 24px;
+        box-shadow: $light-box-shadow;
+    }
+}
