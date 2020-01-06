@@ -93,3 +93,12 @@
     height: 25px;
     display: block;
 }
+
+// Cards
+
+@mixin primary-card {
+    background-color: transparent;
+    color: white;
+    border-radius: 8px;
+    border: 1px solid $primary-yellow;
+}

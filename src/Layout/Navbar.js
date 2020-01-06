@@ -8,38 +8,41 @@ import {
     Button,
     Drawer,
     useScrollTrigger,
-    Slide
+    Slide,
+    // Zoom,
+    // Fab
 } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
+// import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 
 import { Link, Events } from 'react-scroll';
 
 const HideonScroll = (props) => {
     const { children, window } = props;
 
-    const trigger = useScrollTrigger({ 
-        target: window ? window() : undefined });
-        
-        const trigger2 = useScrollTrigger({ 
-            disableHysteresis: true,
-            threshold: 0
-        });
+    const trigger = useScrollTrigger({
+        target: window ? window() : undefined
+    });
 
+    const trigger2 = useScrollTrigger({
+        disableHysteresis: true,
+        threshold: 0
+    });
+
+    const handleClick = event => {
+        const anchor = (event.target.ownerDocument || document).querySelector('#back-to-top-anchor');
+    
+        if (anchor) {
+          anchor.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      };
     return (
-        
         <Slide appear={false} direction="down" in={!trigger} elevation={trigger2 ? 4 : 0}>
             {children}
         </Slide>
     )
 }
-HideonScroll.propTypes = {
-    children: PropTypes.element.isRequired,
-    /**
-     * Injected by the documentation to work in an iframe.
-     * You won't need it on your project.
-     */
-    window: PropTypes.func,
-  };
+
 const NavMenu = () => {
     return (
         <ul className="nav-menu">
