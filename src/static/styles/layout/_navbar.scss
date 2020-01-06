@@ -1,17 +1,30 @@
 #navbar{
+    .MuiToolbar-gutters{
+        padding: 0;
+    }
     @extend .container;
     padding-top: 0;
     padding-bottom: 0;
     color: $primary-blue;
-    h2{
+    .logo{
         color: $primary-black;
+        @include rwd(300,600){
+            margin-left: 8px;
+            h2{
+                font-size: 16px;
+
+            }
+        }
+        margin-left: 16px;
+        @include xl{
+            margin: unset;
+        }
     }
     .grow{
         display: flex;
         flex-grow: 1;
     }
     .menu-button{
-        margin-right: 10px;
         display: inline;
         @include xl{
             display: none;
@@ -65,7 +78,6 @@
                 font-weight: $bold-font;
                 button{
                     text-transform: capitalize;
-
                 }
             }
         }
