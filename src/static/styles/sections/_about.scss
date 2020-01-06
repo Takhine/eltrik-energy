@@ -1,0 +1,78 @@
+.about{
+    @extend .container;
+    background-color: $primary-blue;
+    color: white;
+    .main-title{
+        width: 120px;
+        padding-top: 20px;
+        margin: auto;
+        @include sm{
+            width: 150px;
+            padding-top: 40px;
+        }
+        @include md{
+            width: 200px;
+            padding-top: 60px;
+        }
+        .title{
+            font-size: 18px;
+            margin-left: 25px;
+            @include sm{
+                font-size: $title-font;
+            }
+            @include md{
+                font-size: $large-font;
+            }
+        }
+        .title-underline{
+            width: inherit;
+        }
+    }
+    .about-description{
+        text-align: center;
+        font-size: $xsmall-font;
+        font-weight: $bold-font;
+        margin-bottom: 32px;
+        @include md{
+            font-size: $subtitle-font;
+        }
+    }
+    .about-card{
+        @include secondary-card;
+        box-shadow: $main-box-shadow;
+        padding: 10px;
+        @media (min-width:960px) {
+            min-height: 300px;
+        }
+        @include md{
+            padding: 20px;
+        }
+        .main-title{
+            @extend .main-title;
+            padding-top: 0;
+            @include sm{
+                width: 120px;
+            }
+            @include md{
+                width: 150px;
+            }
+        }
+        .subtitle-underline{
+            @extend .title-underline;
+        }
+            &:hover{
+                box-shadow: $light-box-shadow;
+            }
+        .about-description{
+            @extend .about-description;
+            text-align: unset;
+        }
+    }
+    .MuiGrid-spacing-xs-8{
+        width: 100%;
+        margin: 0;
+        .MuiGrid-item {
+            padding: 16px;
+        }
+    }
+}

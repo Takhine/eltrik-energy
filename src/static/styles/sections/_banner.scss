@@ -87,6 +87,10 @@
         font-size: $xsmall-font;
         max-width: 300px;
         font-weight: $bold-font;
+        margin: auto;
+        @include sm{
+            margin: unset;
+        }
         @include md{
             font-size: $subtitle-font;
             max-width: 450px;
