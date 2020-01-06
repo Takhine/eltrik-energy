@@ -41,7 +41,7 @@ const Benefits = () => {
     return (
         <div className="benefits">
             <div className="main-title">
-                <h1 className="title">Benefits</h1>
+                <h2 className="title">Benefits</h2>
                 <img src={underline} className="title-underline" alt="Underline" />
             </div>
             <Grid container spacing={4}>

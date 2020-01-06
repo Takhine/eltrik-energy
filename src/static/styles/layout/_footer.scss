@@ -1,0 +1,79 @@
+.footer{
+    @extend .container;
+    background-color: $primary-black;
+    color:white;    
+    .footer-section{
+        padding: 6px 24px;
+        @include rwd(300,960){
+            text-align: center;
+            margin: auto;
+        }
+        ul{
+            list-style: none;
+            li{
+                button{
+                    color: white;
+                    text-transform: capitalize;
+                    transition: $transition-main;
+                    &:hover{
+                        color: $primary-yellow;
+                        transition: $transition-main;
+                    }
+                }
+            }
+        }
+    }
+    .footer-title{
+        text-align: center;
+        width: 150px;
+        margin: auto;
+        margin-bottom: 4px;
+        @include sm{
+            margin-bottom: 8px;
+            width: 200px;
+        }
+        @include rwd(959,2500){
+            margin: unset;
+            margin-bottom: 8px;
+        }
+        .title{
+            font-size: 18px;
+            margin-left: 20px;
+            @include sm{
+                font-size: $default-font;
+
+            }
+        }
+        .title-underline{
+            width: inherit;
+        }
+    }
+    .main-title{
+        text-align: center;
+        width: 150px;
+        padding-top: 20px;
+        margin: auto;
+        margin-bottom: 16px;
+        @include sm{
+            width: 250px;
+            padding-top: 40px;
+        }
+        @include md{
+            width: 300px;
+            padding-top: 60px;
+        }
+        .title{
+            font-size: 18px;
+            @include sm{
+                font-size: $title-font;
+
+            }
+            @include md{
+                font-size: $large-font;
+            }
+        }
+        .title-underline{
+            width: inherit;
+        }
+    }
+}

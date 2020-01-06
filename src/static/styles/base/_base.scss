@@ -5,6 +5,10 @@
     font-family: $main-font;
 }
 
+hr{
+    border: .5px solid $grey;
+    margin: 24px 0;
+}
 .container{
     padding:60px 16px;
     @include lg{

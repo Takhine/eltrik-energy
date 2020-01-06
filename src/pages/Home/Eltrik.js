@@ -9,7 +9,7 @@ const Eltrik = () => {
     return (
         <div className="eltrik">
             <div className="main-title">
-                <h1 className="title">Eltrik Avenue</h1>
+                <h2 className="title">Eltrik Avenue</h2>
                 <img src={underline} className="title-underline" alt="Underline" />
             </div>
             <Grid container spacing={4}>

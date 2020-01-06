@@ -11,7 +11,7 @@ const About = () => {
     return (
         <div className="about">
             <div className="main-title">
-                <h1 className="title">About us</h1>
+                <h2 className="title">About us</h2>
                 <img src={underline} className="title-underline" alt="Underline" />
             </div>
             <p className="about-description">ELTRIK ENERGY INDIA is a newly formed company, based out of Mumbai. It is being managed by a group of Professionals with years of experience in their current and diversified field in marketing, manufacturing, and managing logistics in auto & industrial fuels locally and internationally. </p>
@@ -19,7 +19,7 @@ const About = () => {
                 <Grid item xs={12} md={6}>
                     <Card className="about-card">
                         <div className="main-title">
-                            <h1 className="title">Mission</h1>
+                            <h2 className="title">Mission</h2>
                             <img src={secondUnderline} className="subtitle-underline" alt="Underline" />
                         </div>
                         <p className="about-description">
@@ -36,7 +36,7 @@ const About = () => {
                 <Grid item xs={12} md={6}>
                     <Card className="about-card">
                         <div className="main-title">
-                            <h1 className="title">Vision</h1>
+                            <h2 className="title">Vision</h2>
                             <img src={secondUnderline} className="subtitle-underline" alt="Underline" />
                         </div>
                         <p className="about-description">
