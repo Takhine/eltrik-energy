@@ -46,10 +46,9 @@ const NavMenu = () => {
     return (
         <ul className="nav-menu">
             <li><Button color="inherit">Home</Button></li>
-            <li><Button color="inherit">Dealership</Button></li>
             <li><Button color="inherit">Benefits</Button></li>
-            <li><Button color="inherit">Eltrik Avenue</Button></li>
             <li><Button color="inherit">About</Button></li>
+            <li><Button color="inherit">Eltrik Avenue</Button></li>
             <li><Button color="inherit" className="download-button">Download Form</Button></li>
         </ul>
     );

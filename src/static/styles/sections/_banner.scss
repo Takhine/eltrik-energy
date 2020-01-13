@@ -23,10 +23,16 @@
     }
     .banner-message{
         width: 50%;
-        height: 100vh;
+        height: inherit;
         position: absolute;
         left: 0;
         z-index: 2;
+        .image-title{
+            position: absolute;
+            top: 30%;
+            left:20%;
+            z-index: 2;
+        }
         img{
             height: inherit;
             margin: 0;
