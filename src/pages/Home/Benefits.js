@@ -9,32 +9,32 @@ const benefits=[
     {
         id:1,
         icon:'',
-        description:'One-time registration fee for uninterrupted battery swapping'
+        title:'One-time registration fee for uninterrupted battery swapping'
     },
     {
         id:2,
         icon:'',
-        description:'Instant SWAP, NO QUEUE'
+        title:'Instant SWAP, NO QUEUE'
     },
     {
         id:3,
         icon:'',
-        description:'Swap-charge stations conveniently located (Near Stations, Bus Stands, Malls, Schools/Colleges & Bazaars)'
+        title:'Swap-charge stations conveniently located (Near Stations, Bus Stands, Malls, Schools/Colleges & Bazaars)'
     },
     {
         id:4,
         icon:'',
-        description:'Longer mileage of Eltrik Li-on Batteries'
+        title:'Longer mileage of Eltrik L-ion Batteries'
     },
     {
         id:5,
         icon:'',
-        description:'Nil Maintenance cost of the battery for the E-rickshaw owner'
+        title:'The company will ensure supply of fully-charged batteries on a daily basis'
     },
     {
         id:6,
         icon:'',
-        description:'Eltrik Li-on battery enables E-Rickshaws to work in multiple shifts a day'
+        title:'Eltrik L-ion battery enables E-Rickshaws to work in multiple shifts a day'
     }
 ]
 const Benefits = () => {
@@ -44,12 +44,12 @@ const Benefits = () => {
                 <h2 className="title">Benefits</h2>
                 <img src={underline} className="title-underline" alt="Underline" />
             </div>
-            <Grid container spacing={4}>
+            <Grid container spacing={6}>
                 {benefits.map((benefit)=>{
                     return(
-                        <Grid className="benefit" key={benefit.id} item xs={12} md={6}>
+                        <Grid className="benefit" key={benefit.id} item xs={12} sm={6} lg={4}>
                         <Card className="benefit-card" variant="outlined">
-                        <p>{benefit.description}</p>
+                        <h4>{benefit.title}</h4>
                         </Card>
                         </Grid>
                     );
@@ -57,8 +57,8 @@ const Benefits = () => {
                 }
                 <Grid className="benefit" item xs={12}>
                 <Card className="benefit-card" variant="outlined">
-                <p>The company will ensure supply of fully-charged batteries on a daily basis
-                </p>
+                <h4>The company will ensure supply of fully-charged batteries on a daily basis
+                </h4>
                 </Card>
                 </Grid>
                 </Grid>

@@ -1,58 +1,68 @@
 .banner{
-    margin-bottom: 40px;
     height: 60vh;
     color: white;
     @media (orientation:portrait) and (max-height:830px){
         height: 70vh;
-        margin-bottom: 20px;
     }
     @media (orientation:portrait) and (max-height:820px) and (min-height:750px){
         height: 60vh;
-        margin-bottom: 20px;
     }
     @media (orientation:portrait) and (min-height:830px){
         height: 40vh;
     }
     @media (orientation:landscape) and (max-height:420px) {
         height: 100vh;
-        margin-bottom: 10px;
     }
     @include xl{
         height: 80vh;
-        margin-bottom: 20px;
     }
     @include xxl{
         @media(max-height:840px){
         height: 100vh;
-        margin-bottom: 10px;
         }
     }
-    @include xxxl{
-        margin-bottom: 60px;
-    }
-    #desktop-banner{
-        display: none;
-        width: 100.53%;
-        margin-left: -7.9px;
+    .banner-message{
+        width: 50%;
+        height: 100vh;
         position: absolute;
-        z-index: -1;
-        @include sm{
-            display: block;
-            margin-top: -10px;
-        }
-        @include lg{
-            margin-top: -100px;
+        left: 0;
+        z-index: 2;
+        img{
+            height: inherit;
+            margin: 0;
+            position: absolute;
+            left: 0;
         }
     }
-    #mobile-banner{
-        display: block;
-        width: 102%;
-        margin-left: -6.9px;
-        margin-top: -50px;
+    .banner-info{
         position: absolute;
-        z-index: -1;
-        @include sm{
-            display: none;
+        top: 30%;
+        right: 0;
+        background: blue;
+        padding: 20px;
+        z-index: 2;
+        ul{
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+    }
+    .slick-slider.slick-initialized{
+        height: inherit;
+        .slick-list{
+            height: inherit;
+            .slick-track{
+                height: inherit;
+                .slick-slide{
+                    height: 100%;
+                    div{
+                        height: inherit;
+                        img{
+                            width: 100%;
+                            height: inherit;
+                        }
+                    }
+                }
+            }
         }
     }
     .main-title{
@@ -99,6 +109,6 @@
     .banner-button{
         @include primary-button;
         margin-top: 24px;
-        box-shadow: $light-box-shadow;
+        box-shadow: $yellow-box-shadow;
     }
 }

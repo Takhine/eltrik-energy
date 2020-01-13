@@ -45,13 +45,14 @@
                 display: inline;
                 padding-left: 20px;
                 cursor: pointer;
-                color: $primary-blue;
+                color: $primary-black;
                 font-weight: $bold-font;
                 button{
                     text-transform: capitalize;
                 }
                 .download-button{
                     @include primary-button;
+                    background-color: $dark-green;
                 }
             }
         }
@@ -74,7 +75,7 @@
             li{
                 display: block; 
                 margin: 16px 0;
-                color: $primary-blue;
+                color: $primary-black;
                 font-weight: $bold-font;
                 button{
                     text-transform: capitalize;

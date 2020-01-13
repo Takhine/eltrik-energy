@@ -1,6 +1,9 @@
 .benefits{
     @extend .container;
-    background-color: $primary-blue;
+    // background-color: $primary-blue;
+    background-image: url(https://i.imgur.com/Ac9iszO.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     color: white;
     .main-title{
         text-align: center;
@@ -32,15 +35,15 @@
     }
     .benefit{
         .benefit-card{
-            @include primary-card;
+            @include secondary-card;
             padding: 10px;
             @include md{
                 padding: 20px;
             }
             min-height: 200px;
-            box-shadow: $main-box-shadow;
+            box-shadow: $blue-box-shadow;
             &:hover{
-                box-shadow: $light-box-shadow;
+                box-shadow: $yellow-box-shadow;
             }
         }
     }
