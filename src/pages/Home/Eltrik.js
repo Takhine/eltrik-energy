@@ -13,12 +13,12 @@ const Eltrik = () => {
                 <img src={underline} className="title-underline" alt="Underline" />
             </div>
             <Grid container spacing={4}>
-                <Grid item xs={12} sm={4} lg={6}>
+                <Grid item xs={12} md={4} lg={6}>
                 <div className="image-container">
                 <img src={avenue} className="avenue-image" alt="Eltrik Avenue Battery Outlet" />
                 </div>
                 </Grid>
-                <Grid item xs={12} sm={8} lg={6}>
+                <Grid item xs={12} md={8} lg={6}>
                     <div className="avenue-description">
                     <p>
                     <b>“ELTRIK AVENUE”</b>, a pay per use Battery Swap service, which gives access to high-performance “ELTRIK LI-ON” lithium-ion batteries to electric-rickshaw drivers and helps them overcome issues of long charging time, battery maintenance & less mileage. Through “ELTRIK AVENUE”, battery swapping service outlets, we aims to increase the income of e-rickshaw driver by lowering the idle time and providing better mileage per charge compared to the lead-acid battery.

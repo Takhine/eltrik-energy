@@ -11,7 +11,7 @@ hr{
 }
 .container{
     padding:60px 16px;
-    @include lg{
+    @include mmd{
         padding:60px 80px;
     }
     @include xl{

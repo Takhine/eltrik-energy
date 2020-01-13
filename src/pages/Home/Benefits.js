@@ -67,7 +67,7 @@ const Benefits = () => {
                                     <img src={benefit.icon} alt={benefit.icon} />
                                 </div>
                                 <h4 className="benefit-title">{benefit.title}</h4>
-                                    <p className="benefit-description">{benefit.description}</p>
+                                <p className="benefit-description">{benefit.description}</p>
                             </Card>
                         </Grid>
                     );
@@ -75,10 +75,19 @@ const Benefits = () => {
                 }
                 <Grid className="benefit" item xs={12}>
                     <Card className="benefit-card" variant="outlined">
-                        <h4>Nil Maintenance cost of the battery for the E-rickshaw owner
-                </h4>
-                        <p>The health of the L-ion batteries will be monitored and maintained by the company. The company will insure that the battery is in good condition each time it is charged. This will give access to high-performance "ELTRIK L-ION" lithium-ion batteries to electric-rickshaw drivers and helps them overcome issues of long charging time, battery maintenance &amp; less mileage. Through "ELTRIK AVENUE" battery swapping station</p>
-                        <p>We aim to increase the income of e-rickshaw driver and in the process have a profitable business model and become market leaders in this segment.</p>
+                        <div className="icon-container left">
+                            <img src={icon7} alt="Save Money with Eltrik Energy" />
+                        </div>
+                        <Grid className="last-benefit" container spacing={4}>
+                            <Grid item xs={12} md={3}>
+                                <h4 className="benefit-title">Nil Maintenance cost of the battery for the E-rickshaw owner</h4>
+                            </Grid>
+                            <Grid item xs={12} md={9}>
+                                <p className="benefit-description">The health of the L-ion batteries will be monitored and maintained by the company. The company will insure that the battery is in good condition each time it is charged. This will give access to high-performance "ELTRIK L-ION" lithium-ion batteries to electric-rickshaw drivers and helps them overcome issues of long charging time, battery maintenance &amp; less mileage. Through "ELTRIK AVENUE" battery swapping station<br /> <br /> We aim to increase the income of e-rickshaw driver and in the process have a profitable business model and become market leaders in this segment.</p>
+                            </Grid>
+
+                        </Grid>
+
                     </Card>
                 </Grid>
             </Grid>
