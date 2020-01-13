@@ -19,3 +19,16 @@ hr{
 
     }
 }
+
+.desktop{
+    display: none;
+    @include mmd{
+        display: block;
+    }
+}
+.mobile{
+    display: block;
+    @include mmd{
+        display: none;
+    }
+}

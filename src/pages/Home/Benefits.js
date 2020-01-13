@@ -53,7 +53,7 @@ const benefits = [
 ]
 const Benefits = () => {
     return (
-        <div className="benefits">
+        <div className="benefits" name="benefits">
             <div className="main-title">
                 <h2 className="title">Benefits</h2>
                 <img src={underline} className="title-underline" alt="Underline" />

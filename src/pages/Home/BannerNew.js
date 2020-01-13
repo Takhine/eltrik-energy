@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import banner from 'static/images/banner.svg';
-import bannerMobile from 'static/images/banner-mobile.svg';
 import underline from 'static/images/primary-underline.svg';
 // Libraries
 import Slider from 'react-slick';
@@ -15,7 +13,9 @@ import savari from 'static/images/savari.png';
 import fuelSlide from 'static/images/slide-1.png';
 import stationSlide from 'static/images/slide-2.png';
 import savariSlide from 'static/images/slide-3.png';
-
+import fuelSlideMobile from 'static/images/slide-1-mobile.png';
+import stationSlideMobile from 'static/images/slide-2-mobile.png';
+import savariSlideMobile from 'static/images/slide-3-mobile.png';
 
 // Slick Slider
 const settings = {
@@ -37,7 +37,7 @@ const settings = {
 
 const BannerSlider = (props) => {
     return (
-        <Slider {...settings} afterChange={props.nextClick}>
+        <Slider className="desktop" {...settings} afterChange={props.nextClick}>
             <div>
                 <img src={fuelSlide} alt="Banner" />
             </div>
@@ -46,6 +46,21 @@ const BannerSlider = (props) => {
             </div>
             <div>
                 <img src={savariSlide} alt="Banner" />
+            </div>
+        </Slider>
+    )
+}
+const BannerSliderMobile = (props) => {
+    return (
+        <Slider className="mobile" {...settings} afterChange={props.nextClick}>
+            <div>
+                <img src={fuelSlideMobile} alt="Banner" />
+            </div>
+            <div>
+                <img src={stationSlideMobile} alt="Banner" />
+            </div>
+            <div>
+                <img src={savariSlideMobile} alt="Banner" />
             </div>
         </Slider>
     )
@@ -77,6 +92,8 @@ const Banner = () => {
 
             <p className="banner-description">Adopting the marketing model of Petrol Pumps the company offers to supply fully charged L-ion batteries on "Pay-Per-Use" basis. Being a cash and carry model, the business involved low investment and high cash profit generation on a daily basis. <br/><br/> <b>Inviting dealers for establishing India's First 'Pay-Per-Use' model!</b></p>
             </div>
+            <BannerSlider nextClick={nextClick} />
+            <BannerSliderMobile nextClick={nextClick} />
             <div className="banner-info">
                 <h4>'Eltrik Fuel Station'</h4>
                 <ul>
@@ -87,7 +104,7 @@ const Banner = () => {
                     <li>The Company will supply charged batteries on daily basis</li>
                 </ul>
             </div>
-            <BannerSlider nextClick={nextClick} />
+            
         </div>
     );
 }

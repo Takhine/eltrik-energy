@@ -1,11 +1,25 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import {
     Grid,
     Button
 } from '@material-ui/core';
 import underline from 'static/images/primary-underline.svg';
+import { Link, Events } from 'react-scroll';
 
 const Footer = () => {
+    useEffect(() => {
+        Events.scrollEvent.register('begin', function(to, element) {
+          });
+       
+          Events.scrollEvent.register('end', function(to, element) {
+          });
+       
+
+          return()=>{
+            Events.scrollEvent.remove('begin');
+            Events.scrollEvent.remove('end');
+          }
+    }, [])
     return (
         <React.Fragment>
             <div className="footer">
@@ -26,11 +40,10 @@ const Footer = () => {
                         </div>
                         <div className="footer-section">
                             <ul>
-                                <li><Button>Home</Button></li>
-                                <li><Button>Dealership</Button></li>
-                                <li><Button>Benefits</Button></li>
-                                <li><Button>Eltrik Avenue</Button></li>
-                                <li><Button>About us</Button></li>
+                                <li><Link activeClass="active" to="home" spy={true} smooth={true} duration={500}><Button>Home</Button></Link></li>
+                                <li><Link activeClass="active" to="benefits" spy={true} smooth={true} duration={500}><Button>Benefits</Button></Link></li>
+                                <li><Link activeClass="active" to="about" spy={true} smooth={true} duration={500}><Button>About Us</Button></Link></li>
+                                <li><Link activeClass="active" to="eltrik" spy={true} smooth={true} duration={500}><Button>Eltrik Avenue</Button></Link></li>
                             </ul>
                         </div>
                     </Grid>

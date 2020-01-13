@@ -1,6 +1,7 @@
 .about{
     @extend .container;
     background-color: $dark-black;
+    padding-top: 20px;
     color: white;
     .main-title{
         width: 120px;
@@ -49,9 +50,35 @@
                 text-align: justify;
                 .image-container{
                     padding: 0;
+                    position: relative;
+                    h3{
+                        position: absolute;
+                        text-transform: uppercase;
+                        top: 30px;
+                        left: 30px;
+                        font-size: $small-font;
+                        @include mmd{
+                            font-size: $title-font;
+                        }
+                        @include mlg{
+                            font-size: $large-font;
+                        }
+                    }
                     img{
                         width: 100%;
                         height: 100%;
+                        &.desktop{
+                            display: none;
+                            @include mmd{
+                                display: block;
+                            }
+                        }
+                        &.mobile{
+                            display: block;
+                            @include mmd{
+                                display: none;
+                            }
+                        }
                     }
                 }
                 p{

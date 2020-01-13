@@ -1,20 +1,12 @@
 .banner{
-    height: 60vh;
+    height: 100%;
     color: white;
     @media (orientation:portrait) and (max-height:830px){
-        height: 70vh;
+        height: 100%;
     }
-    @media (orientation:portrait) and (max-height:820px) and (min-height:750px){
-        height: 60vh;
-    }
-    @media (orientation:portrait) and (min-height:830px){
-        height: 40vh;
-    }
-    @media (orientation:landscape) and (max-height:420px) {
-        height: 100vh;
-    }
+
     @include xl{
-        height: 80vh;
+        height: 100vh;
     }
     @include xxl{
         @media(max-height:840px){
@@ -22,27 +14,40 @@
         }
     }
     .banner-message{
-        width: 50%;
+        width: 100%;
+        @include mmd{
+            width: 50%;
+
+        }
         height: inherit;
         position: absolute;
         left: 0;
         z-index: 2;
         .image-title{
+            top: 70px;
+            max-width: 200px;
+            left: 50px;
             position: absolute;
-            top: 15%;
-            left: 15%;
-            width: 100%;
-            z-index: 2;
-            max-width: 450px;
             height: auto;
+            @include mmd{
+                top: 15%;
+                left: 10%;
+                width: 100%;
+                z-index: 2;
+                max-width: 450px;
+            }
         }
         .banner-description{
             position: absolute;
-            top: 35%;
-            left: 15%;
+            top: 130px;
+            left: 10%;
             max-width: 500px;
             height: auto;
-            font-size: $subtitle-font;
+            font-size: 10px;
+            @include mmd{
+                top: 35%;
+                font-size: $subtitle-font;
+            }
         }
         img{
             height: inherit;
@@ -52,18 +57,36 @@
         }
     }
     .banner-info{
-        position: absolute;
-        top: 50%;
-        right: 0;
-        background: white;
+        position: relative;
         color:$primary-black;
-        padding: 30px 20px;
-        z-index: 2;
-        border-top-left-radius: 8px;
-        border-bottom-left-radius: 8px;
+        padding: 20px;
+        @include mmd{
+            position: absolute;
+            top: 50%;
+            right: 0;
+            background: white;
+            color:$primary-black;
+            padding: 30px 20px;
+            z-index: 2;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+        h4{
+            font-size: $subtitle-font;
+            color: $primary-blue;
+            @include mmd{
+                font-size: $title-font;
+            }
+        }
         ul{
             padding-left: 20px;
             margin-top: 10px;
+            max-width: 400px;
+            margin: auto;
+            @include mmd{
+                margin: 10px 0 0 0;
+                max-width: unset;
+            }
         }
     }
     .slick-slider.slick-initialized{
@@ -77,6 +100,10 @@
                     div{
                         height: inherit;
                         img{
+                            margin-top: 56px;
+                            @include mmd{
+                                margin-top: 0;
+                            }
                             width: 100%;
                             height: inherit;
                         }

@@ -4,7 +4,7 @@ import bannerMobile from 'static/images/banner-mobile.svg';
 import underline from 'static/images/primary-underline.svg';
 const Banner = () => {
     return (
-        <div className="banner">
+        <div className="banner" name="home">
             <img id="desktop-banner" src={banner} alt="Banner" />
             <img id="mobile-banner" src={bannerMobile} alt="Banner" />
             <div className="container">

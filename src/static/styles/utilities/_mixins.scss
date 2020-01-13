@@ -54,6 +54,11 @@
         @content;
     }
  }
+ @mixin mlg{
+    @media (min-width: #{$mui-screen-lg-min}){
+        @content;
+    }
+}
  @mixin mmd{
      @media (min-width: #{$mui-screen-md-min}){
          @content;

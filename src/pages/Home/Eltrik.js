@@ -7,7 +7,7 @@ import underline from 'static/images/secondary-underline.svg';
 import avenue from 'static/images/eltrik-avenue.png'
 const Eltrik = () => {
     return (
-        <div className="eltrik">
+        <div className="eltrik" name="eltrik">
             <div className="main-title">
                 <h2 className="title">Eltrik Avenue</h2>
                 <img src={underline} className="title-underline" alt="Underline" />
@@ -25,9 +25,9 @@ const Eltrik = () => {
                     </p>
                     <h3 className="subtitle">Join our network</h3>
                     <p style={{display:'inline'}}><b>ELTRIK ENERGY INDIA</b>, proposes to set up “ELTRIK AVENUE” Battery Swapping Service for E-Rickshaw, every few kilometers in metros, class I and class II towns across the country. </p>
-                    <a href="#" className="requirements-link">Requirements</a>
+                   { /*<a href="#" className="requirements-link">Requirements</a>*/}
                     <h3 className="subtitle">Download Dealership Form</h3>
-                    <Button className="download-button">Download</Button>
+                    <a style={{textDecoration:'none'}} type="application/octet-stream" download="enquiry-form.pdf" href={require('../../static/download/enquiry-form.pdf')}><Button className="download-button">Download</Button></a>
                     </div>
                 </Grid>
             </Grid>

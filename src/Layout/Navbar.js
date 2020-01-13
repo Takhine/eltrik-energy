@@ -12,8 +12,7 @@ import {
     // Fab
 } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
-// import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
-
+import logo from 'static/images/logo.png';
 import { Link, Events } from 'react-scroll';
 
 const HideonScroll = (props) => {
@@ -42,14 +41,27 @@ const HideonScroll = (props) => {
     )
 }
 
-const NavMenu = () => {
+const NavMenu = (props) => {
+    useEffect(() => {
+        Events.scrollEvent.register('begin', function(to, element) {
+          });
+       
+          Events.scrollEvent.register('end', function(to, element) {
+          });
+       
+
+          return()=>{
+            Events.scrollEvent.remove('begin');
+            Events.scrollEvent.remove('end');
+          }
+    }, [])
     return (
         <ul className="nav-menu">
-            <li><Button color="inherit">Home</Button></li>
-            <li><Button color="inherit">Benefits</Button></li>
-            <li><Button color="inherit">About</Button></li>
-            <li><Button color="inherit">Eltrik Avenue</Button></li>
-            <li><Button color="inherit" className="download-button">Download Form</Button></li>
+            <li><Link activeClass="active" to="home" spy={true} smooth={true} duration={500}><Button color="inherit" onClick={props.onClose}>Home</Button></Link></li>
+            <li><Link activeClass="active" to="benefits" spy={true} smooth={true} duration={500}><Button color="inherit" onClick={props.onClose}>Benefits</Button></Link></li>
+            <li><Link activeClass="active" to="about" spy={true} smooth={true} duration={500}><Button color="inherit" onClick={props.onClose}>About</Button></Link></li>
+            <li><Link activeClass="active" to="eltrik" spy={true} smooth={true} duration={500}><Button color="inherit" onClick={props.onClose}>Eltrik Avenue</Button></Link></li>
+            <li><a style={{textDecoration:'none'}} type="application/octet-stream" download="enquiry-form.pdf" href={require('../static/download/enquiry-form.pdf')}><Button color="inherit" className="download-button">Download Form</Button></a></li>
         </ul>
     );
 }
@@ -86,14 +98,14 @@ const Navbar = (props) => {
                         <MenuIcon />
                     </IconButton>
                     <Drawer className="menu-drawer" open={drawerOpen} onClose={toggleDrawer(false)}>
-                        <NavMenu />
+                        <NavMenu onClose={toggleDrawer(false)} />
                     </Drawer>
-                    <Button className="logo"><h2>Eltrik Energy</h2></Button>
+                    <Link activeClass="active" to="home" spy={true} smooth={true} duration={500}><Button><img  className="logo" src={logo} alt="Eltrik Energy India" /></Button></Link>
                     <div className="grow" />
                     <div className="section-desktop">
                         <NavMenu />
                     </div>
-                    <Button className="mobile-button">Download</Button>
+                    <Button className="mobile-button">Download Form</Button>
                 </Toolbar>
             </AppBar>
         </HideonScroll>
