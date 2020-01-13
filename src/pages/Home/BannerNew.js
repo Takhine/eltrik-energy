@@ -7,6 +7,15 @@ import Slider from 'react-slick';
 import bannerMessage from 'static/images/banner-message.svg';
 import { fade } from '@material-ui/core';
 
+// images
+import fuel from 'static/images/fuel.png';
+import station from 'static/images/station.png';
+import savari from 'static/images/savari.png';
+
+import fuelSlide from 'static/images/slide-1.png';
+import stationSlide from 'static/images/slide-2.png';
+import savariSlide from 'static/images/slide-3.png';
+
 
 // Slick Slider
 const settings = {
@@ -17,40 +26,43 @@ const settings = {
     autoplaySpeed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    fade: true
+    fade: true,
+    accessibility:false,
+    draggable:false,
+    focusOnSelect:false,
+    pauseOnHover:false,
+    pauseOnFocus:false,
+    swipe:false,
 }
 
 const BannerSlider = (props) => {
     return (
         <Slider {...settings} afterChange={props.nextClick}>
             <div>
-                <p className="image-title">Naya Fuel</p>
-                <img src="https://i.imgur.com/Ac9iszO.png" alt="Banner" />
+                <img src={fuelSlide} alt="Banner" />
             </div>
             <div>
-                <p className="image-title">Naya Station</p>
-                <img src="https://images.unsplash.com/photo-1473016710036-1fe01c8f9b78?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=812&q=80" alt="Banner" />
+                <img src={stationSlide} alt="Banner" />
             </div>
             <div>
-                <p className="image-title">Naya Savari</p>
-                <img src="https://i.imgur.com/Ac9iszO.png" alt="Banner" />
+                <img src={savariSlide} alt="Banner" />
             </div>
         </Slider>
     )
 }
 const Banner = () => {
     const[slide,setSlide]=useState(0);
-    const[slideValue,setSlideValue]=useState('Fuel')
+    const[slideValue,setSlideValue]=useState(fuel)
     useEffect(()=>{
         if(slide===0){
-            setSlideValue('Fuel');
+            setSlideValue(fuel);
         }
         else if(slide===1){
-            setSlideValue('Station');
+            setSlideValue(station);
             
         }
         else{
-            setSlideValue('Savari');
+            setSlideValue(savari);
 
         }
     },[slide])
@@ -61,8 +73,9 @@ const Banner = () => {
     return (
         <div className="banner">
             <div className="banner-message">
-                <p className="image-title">Naya <b style={{transition:'width 0.5s 0.5s, height 0.5s 0.5s, opacity 0.5s'}}>{slideValue}</b></p>
-                <img src={bannerMessage} alt="Banner Message" />
+            <img className="image-title" src={slideValue} alt={slideValue} />
+
+            <p className="banner-description">Adopting the marketing model of Petrol Pumps the company offers to supply fully charged L-ion batteries on "Pay-Per-Use" basis. Being a cash and carry model, the business involved low investment and high cash profit generation on a daily basis. <br/><br/> <b>Inviting dealers for establishing India's First 'Pay-Per-Use' model!</b></p>
             </div>
             <div className="banner-info">
                 <h4>'Eltrik Fuel Station'</h4>
