@@ -55,3 +55,9 @@
         @include dark-button;
     }
 }
+
+.eltrik-lion{
+    @include  mmd{
+        flex-direction: row-reverse;
+    }
+}

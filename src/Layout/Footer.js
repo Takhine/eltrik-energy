@@ -30,7 +30,9 @@ const Footer = () => {
                             <img src={underline} className="title-underline" alt="Underline" />
                         </div>
                         <div className="footer-section">
-                            <p>Presenting India's first EV battery swapping station. The Faster, Cheaper, Better way to Charge Electric Rickshaws</p>
+                        <Button style={{color:'white',textTransform:'capitalize'}}>Government Policy Paper</Button>
+                        <br/>
+                        <Button style={{color:'white',textTransform:'capitalize'}}>Media Speak</Button>
                         </div>
                     </Grid>
                     <Grid item xs={12} sm={6} md={4}>
@@ -57,6 +59,10 @@ const Footer = () => {
                             <p>4, Harihar Niwas, Plot No.31-B,<br />
                                 Poddar Street, off SV Road<br />
                                 Santacruz (West), Mumbai - 400 054.</p>
+
+                            <br/>
+                            <br/>
+                            <a style={{color:'white',textDecoration:'none'}} href="mailto:gm@eltrik.in"><Button style={{color:'white',textTransform:'lowercase'}}>gm@eltrik.in</Button></a>
                         </div>
                     </Grid>
                 </Grid>
