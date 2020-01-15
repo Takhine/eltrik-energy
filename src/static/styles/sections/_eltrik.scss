@@ -3,6 +3,9 @@
     padding-top: 30px;
     .main-title{
         width: 150px;
+        &.lion{
+            width: 200px;
+        }
         padding-top: 20px;
         margin: auto;
         margin-bottom: 16px;
@@ -10,9 +13,15 @@
             margin: unset;
             width: 200px;
             padding-top: 40px;
+            &.lion{
+                width: 300px;
+            }
         }
         @include md{
             width: 250px;
+            &.lion{
+                width: 350px;
+            }
             padding-top: 60px;
         }
         .title{
@@ -36,7 +45,6 @@
     }
     .avenue-description{
         font-size: $xsmall-font;
-        font-weight: $bold-font;
         text-align: justify;
         @include md{
             font-size: $subtitle-font;
@@ -59,5 +67,14 @@
 .eltrik-lion{
     @include  mmd{
         flex-direction: row-reverse;
+    }
+    .lion-description{
+        @extend .avenue-description;
+        ul{
+            padding: 10px 0 0 20px;
+            li{
+                padding: 5px 0;
+            }
+        }
     }
 }

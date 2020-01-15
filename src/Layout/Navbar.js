@@ -27,13 +27,7 @@ const HideonScroll = (props) => {
         threshold: 0
     });
 
-    const handleClick = event => {
-        const anchor = (event.target.ownerDocument || document).querySelector('#back-to-top-anchor');
-    
-        if (anchor) {
-          anchor.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }
-      };
+
     return (
         <Slide appear={false} direction="down" in={!trigger} elevation={trigger2 ? 4 : 0}>
             {children}

@@ -1,9 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import underline from 'static/images/primary-underline.svg';
+import React, { useState } from 'react';
 // Libraries
 import Slider from 'react-slick';
-import bannerMessage from 'static/images/banner-message.svg';
-import { fade } from '@material-ui/core';
 
 // images
 import fuel from 'static/images/fuel.png';
@@ -68,7 +65,9 @@ const BannerSliderMobile = (props) => {
 const Banner = () => {
     const[slide,setSlide]=useState(0);
     const[slideValue,setSlideValue]=useState(fuel)
-    useEffect(()=>{
+
+    const nextClick=(e)=>{
+        setSlide(e);
         if(slide===0){
             setSlideValue(fuel);
         }
@@ -76,14 +75,10 @@ const Banner = () => {
             setSlideValue(station);
             
         }
-        else{
+        else if(slide===2){
             setSlideValue(savari);
 
         }
-    },[slide])
-
-    const nextClick=(e)=>{
-        setSlide(e);
     }
     return (
         <div className="banner">

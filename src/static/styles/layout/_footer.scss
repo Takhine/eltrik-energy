@@ -3,6 +3,13 @@
     background-color: $primary-blue;
     color:white;    
     .footer-section{
+        p{
+            font-size: $small-font;
+            font-weight: 300;
+        }
+        button{
+            font-weight: 300;
+        }
         padding: 6px 24px;
         @include rwd(300,960){
             text-align: center;
@@ -11,10 +18,13 @@
         ul{
             list-style: none;
             li{
+                
                 button{
                     color: white;
                     text-transform: capitalize;
                     transition: $transition-main;
+                    font-weight: 300;
+
                     &:hover{
                         color: $primary-yellow;
                         transition: $transition-main;

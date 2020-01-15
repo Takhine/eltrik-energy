@@ -5,6 +5,8 @@ import {
 } from '@material-ui/core';
 import underline from 'static/images/secondary-underline.svg';
 import avenue from 'static/images/eltrik-avenue.png'
+import lion from 'static/images/eltrik-lion.png'
+
 const Eltrik = () => {
     return (
         <div className="eltrik" name="eltrik">
@@ -31,20 +33,29 @@ const Eltrik = () => {
                     </div>
                 </Grid>
             </Grid>
-            <br/>
-            <hr style={{color:'#F8C300'}}/>
-            <br/>
+            <div className="main-title lion">
+                <h2 className="title">Eltrik "Energy" Battery</h2>
+                <img src={underline} className="title-underline" alt="Underline" />
+            </div>
             <Grid className="eltrik-lion" container spacing={4}>
                 <Grid item xs={12} md={4} lg={6}>
                     <div className="image-container">
-                        <img src={avenue} className="avenue-image" alt="Eltrik Avenue Battery Outlet" />
+                        <img src={lion} className="avenue-image" alt="Eltrik Avenue Battery" />
                     </div>
                 </Grid>
                 <Grid item xs={12} md={8} lg={6}>
-                    <div className="avenue-description">
+                    <div className="lion-description">
                         <p>
-                            <b>“ELTRIK AVENUE”</b>, a pay per use Battery Swap service, which gives access to high-performance “ELTRIK LI-ON” lithium-ion batteries to electric-rickshaw drivers and helps them overcome issues of long charging time, battery maintenance & less mileage. Through “ELTRIK AVENUE”, battery swapping service outlets, we aims to increase the income of e-rickshaw driver by lowering the idle time and providing better mileage per charge compared to the lead-acid battery.
-                    </p>
+                            <b>Eltrik Energy</b> India presents the most advance L-ion Batteries. The batteries are monitored and tracked 24x7 by company developed software for uninterrupted and smooth running.
+                        </p>
+                        <ul>
+                            <li>Smart Lithium Battery</li>
+                            <li>Swap Compatible</li>
+                            <li>Indigenously Developed Battery Management System</li>
+                            <li>Longer Life</li>
+                            <li>Faster Charge and Discharge for optimum performance</li>
+                            <li>Energy Efficiency</li>
+                        </ul>
                     </div>
                 </Grid>
             </Grid>
