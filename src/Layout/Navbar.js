@@ -37,17 +37,17 @@ const HideonScroll = (props) => {
 
 const NavMenu = (props) => {
     useEffect(() => {
-        Events.scrollEvent.register('begin', function(to, element) {
-          });
-       
-          Events.scrollEvent.register('end', function(to, element) {
-          });
-       
+        Events.scrollEvent.register('begin', function (to, element) {
+        });
 
-          return()=>{
+        Events.scrollEvent.register('end', function (to, element) {
+        });
+
+
+        return () => {
             Events.scrollEvent.remove('begin');
             Events.scrollEvent.remove('end');
-          }
+        }
     }, [])
     return (
         <ul className="nav-menu">
@@ -55,7 +55,7 @@ const NavMenu = (props) => {
             <li><Link activeClass="active" to="benefits" spy={true} smooth={true} duration={500}><Button color="inherit" onClick={props.onClose}>Benefits</Button></Link></li>
             <li><Link activeClass="active" to="about" spy={true} smooth={true} duration={500}><Button color="inherit" onClick={props.onClose}>About</Button></Link></li>
             <li><Link activeClass="active" to="eltrik" spy={true} smooth={true} duration={500}><Button color="inherit" onClick={props.onClose}>Eltrik Avenue</Button></Link></li>
-            <li><a style={{textDecoration:'none'}} type="application/octet-stream" download="enquiry-form.pdf" href={require('../static/download/enquiry-form.pdf')}><Button color="inherit" className="download-button">Download Form</Button></a></li>
+            <li><a style={{ textDecoration: 'none' }} type="application/octet-stream" download="enquiry-form.pdf" href={require('../static/download/enquiry-form.pdf')}><Button color="inherit" className="download-button">Download Form</Button></a></li>
         </ul>
     );
 }
@@ -94,7 +94,7 @@ const Navbar = (props) => {
                     <Drawer className="menu-drawer" open={drawerOpen} onClose={toggleDrawer(false)}>
                         <NavMenu onClose={toggleDrawer(false)} />
                     </Drawer>
-                    <Link activeClass="active" to="home" spy={true} smooth={true} duration={500}><Button><img  className="logo" src={logo} alt="Eltrik Energy India" /></Button></Link>
+                    <Link activeClass="active" to="home" spy={true} smooth={true} duration={500}><Button><img className="logo" src={logo} alt="Eltrik Energy India" /></Button></Link>
                     <div className="grow" />
                     <div className="section-desktop">
                         <NavMenu />

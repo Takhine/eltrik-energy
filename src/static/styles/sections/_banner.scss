@@ -62,7 +62,7 @@
         padding: 20px;
         @include mmd{
             position: absolute;
-            top: 50%;
+            top: 450px;
             right: 0;
             background: white;
             color:$primary-black;
@@ -100,7 +100,7 @@
                     div{
                         height: inherit;
                         img{
-                            margin-top: 56px;
+                            margin-top: 30px;
                             @include mmd{
                                 margin-top: 0;
                             }

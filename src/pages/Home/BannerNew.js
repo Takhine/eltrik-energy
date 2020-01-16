@@ -87,14 +87,16 @@ const Banner = () => {
 
             <p className="banner-description">Adopting the marketing model of Petrol Pumps the company offers to supply fully charged <b>'Eltrik Energy' batteries</b> (<i>Lithium</i> LiFePo4) on "Pay-Per-Use" basis. Being a cash and carry model, the business involved low investment and high cash profit generation on a daily basis. <br/><br/> <b>Inviting Dealers for establishing India's First 'Pay-Per-Use' Swapping Stations!</b></p>
             </div>
+
             <BannerSlider nextClick={nextClick} />
             <BannerSliderMobile nextClick={nextClick} />
+            <div id="google_translate_element" />
             <div className="banner-info">
-                <h4>'Eltrik Fuel Station'</h4>
+                <h4>'Eltrik Avenue Station'</h4>
                 <ul>
                     <li>Low Investment as Batteries will be provided on 'wet lease'</li>
                     <li>No capital cost of installing battery charges at dealer outlets</li>
-                    <li>Shop measuring 150sq.ft onwards to start the dealership</li>
+                    <li>Shop measuring 150sq.ft onwards and investment of Rs 10 lacs towards stocks to start the dealership</li>
                     <li>Batteries will be monitored and maintained by the Company</li>
                     <li>The Company will supply charged batteries on daily basis</li>
                 </ul>
