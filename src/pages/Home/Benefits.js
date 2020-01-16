@@ -18,13 +18,13 @@ const benefits = [
         id: 1,
         icon: icon1,
         title: 'One-time registration fee for uninterrupted battery swapping',
-        description: "The comany's unique marketing strategy 'pay per use' will insure that the burden of investing in a LiFePo4 battery is taken off from the e-rickshaw driver/owner. Therefore making it very attractive fo them to shift to L-ion batteries from Sealed Lead Acid Batteries and encourage new users."
+        description: "The comany's unique marketing strategy 'pay per use' will insure that the burden of investing in a battery is taken off from the e-rickshaw driver/owner. Therefore making it very attractive fo them to shift to 'Eltrik Energy' batteries (Lithium LiFePo4) from Sealed Lead Acid Batteries and encourage new users."
     },
     {
         id: 2,
         icon: icon2,
         title: 'Instant SWAP, NO QUEUE',
-        description: 'The e-rickshaw driver will visit any of the ELTRIK AVENUE outlet and simply swap his discharged battery with fully charged battery. The whole process will take less time than traditional fueling. Further the deal will not require any huge investment in land or building. A 150sq.ft road facing ground floor shop is all that is required to store the charged/discharged batteries.'
+        description: "The e-rickshaw driver will visit any of the 'ELTRIK AVENUE' outlet and simply swap his discharged battery with fully charged battery. The whole process will take less time than traditional fueling. Further the deal will not require nominal investment of Rs. 10 lacs investment against stocks and a 150sq.ft road facing ground floor shop required to conduct the trade and store the charged/discharged batteries."
     },
     {
         id: 3,
@@ -48,7 +48,7 @@ const benefits = [
         id: 6,
         icon: icon6,
         title: 'Eltrik LiFePo4 battery enables E-Rickshaws to work in multiple shifts a day',
-        description: "Unlike traditional Sealed Lead Acid batteries which needs to be charged for upto 5 to 6 hours, whereas LiFePo4 batteries under the company plan will fully charged and will require few seconds for the e-auto rickshaw to go back to doing his business. What's more unlike current scenario of single source of charging, the registered e-rickshaw driver can swap his LiFePo4 battery at any of the 'ELTRIK AVENUE' outlet."
+        description: "Unlike traditional Sealed Lead Acid batteries which needs to be charged for upto 5 to 6 hours, whereas under the company plan we will supply fully charged 'Eltrik Energy' Lithium LiFePo4 battery which will require a few minutes to swap and go back to doing his business. Unlike current scenario of single source of charging, the registered e-rickshaw driver can swap his ‘Eltrik Energy’ Lithium LiFePo4 battery at any of the 'ELTRIK AVENUE' Swapping Stations."
     }
 ]
 const Benefits = () => {
@@ -83,7 +83,7 @@ const Benefits = () => {
                                 <h4 className="benefit-title">Nil Maintenance cost of the battery for the E-rickshaw owner</h4>
                             </Grid>
                             <Grid item xs={12} md={9}>
-                                <p className="benefit-description">The health of the LiFePo4 batteries will be monitored and maintained by the company. The company will insure that the battery is in good condition each time it is charged. This will give access to high-performance LiFePo4 batteries to electric-rickshaw drivers and helps them overcome issues of long charging time, battery maintenance &amp; less mileage. Through "ELTRIK AVENUE" battery swapping station<br /> <br /> We aim to increase the income of e-rickshaw driver and in the process have a profitable business model and become market leaders in this segment.</p>
+                                <p className="benefit-description">The health of his 'Eltrik Energy' Lithium LiFePo4 batteries will be monitored and maintained at the company's Charging Plants. The company will insure that the battery is in good condition each time it is charged. This will give access to high-performance 'Eltrik Energy' Lithium LiFePo4 batteries to electric-rickshaw drivers and helps them overcome issues of long charging time, battery maintenance &amp; less mileage. Through "ELTRIK AVENUE" battery swapping station<br /> <br /> This process will increase the income of e-rickshaw driver/owner and lead to a profitable business model for all "ELTRIK AVENUE" Dealers and help the company in taking a sizable market share of this segment</p>
                             </Grid>
 
                         </Grid>

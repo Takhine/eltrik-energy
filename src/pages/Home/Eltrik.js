@@ -23,10 +23,10 @@ const Eltrik = () => {
                 <Grid item xs={12} md={8} lg={6}>
                     <div className="avenue-description">
                         <p>
-                            <b>“ELTRIK AVENUE”</b>, a pay per use Battery Swap service, which gives access to high-performance <b>LiFePo4 batteries</b> to electric-rickshaw drivers and helps them overcome issues of long charging time, battery maintenance & less mileage. Through “ELTRIK AVENUE”, battery swapping service outlets, we aims to increase the income of e-rickshaw driver by lowering the idle time and providing better mileage per charge compared to the lead-acid battery.
+                            <b>“ELTRIK AVENUE”</b>, a pay per use Battery Swap service, which gives access to high-performance <b>'Eltrik Energy'</b> Lithium LiFePo4 batteries to electric-rickshaw drivers and helps them overcome issues of long charging time, battery maintenance & less mileage. Through “ELTRIK AVENUE”, battery swapping stations, we aims to increase the income of e-rickshaw driver by lowering the idle time and providing better mileage per charge compared to the lead-acid battery.
                     </p>
                         <h3 className="subtitle">Join our network</h3>
-                        <p style={{ display: 'inline' }}><b>ELTRIK ENERGY INDIA</b>, proposes to set up “ELTRIK AVENUE” Battery Swapping Service for E-Rickshaw, every few kilometers in metros, class I and class II towns across the country. </p>
+                        <p style={{ display: 'inline' }}><b>ELTRIK ENERGY INDIA</b>, proposes to set up “ELTRIK AVENUE” Battery Swapping Stations for E-Rickshaw, every few kilometers in metros, class I and class II towns across the country. </p>
                         { /*<a href="#" className="requirements-link">Requirements</a>*/}
                         <h3 className="subtitle">Download Dealership Form</h3>
                         <a style={{ textDecoration: 'none' }} type="application/octet-stream" download="enquiry-form.pdf" href={require('../../static/download/enquiry-form.pdf')}><Button className="download-button">Download</Button></a>

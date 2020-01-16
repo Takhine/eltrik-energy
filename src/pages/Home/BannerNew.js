@@ -85,7 +85,7 @@ const Banner = () => {
             <div className="banner-message">
             <img className="image-title" src={slideValue} alt={slideValue} />
 
-            <p className="banner-description">Adopting the marketing model of Petrol Pumps the company offers to supply fully charged LiFePo4 betteries on "Pay-Per-Use" basis. Being a cash and carry model, the business involved low investment and high cash profit generation on a daily basis. <br/><br/> <b>Inviting dealers for establishing India's First 'Pay-Per-Use' model!</b></p>
+            <p className="banner-description">Adopting the marketing model of Petrol Pumps the company offers to supply fully charged <b>'Eltrik Energy' batteries</b> (<li>Lithium</li> LiFePo4) on "Pay-Per-Use" basis. Being a cash and carry model, the business involved low investment and high cash profit generation on a daily basis. <br/><br/> <b>Inviting Dealers for establishing India's First 'Pay-Per-Use' Swapping Stations!</b></p>
             </div>
             <BannerSlider nextClick={nextClick} />
             <BannerSliderMobile nextClick={nextClick} />
