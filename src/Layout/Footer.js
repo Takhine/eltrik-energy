@@ -30,7 +30,7 @@ const Footer = () => {
                             <img src={underline} className="title-underline" alt="Underline" />
                         </div>
                         <div className="footer-section">
-                        <a style={{color:'white',textTransform:'capitalize', textDecoration:'none'}} type="application/octet-stream" download="government-policy-paper.pdf" href={require('../static/download/government-policy-paper.pdf')}><Button style={{textTransform:'capitalize'}} color="inherit" className="download-button">Goveernment Policy Paper</Button></a>
+                        <a style={{color:'white',textTransform:'capitalize', textDecoration:'none'}} type="application/octet-stream" download="government-policy-paper.pdf" href={require('../static/download/government-policy-paper.pdf')}><Button style={{textTransform:'capitalize'}} color="inherit" className="download-button">Government Policy Paper</Button></a>
                         <br/>
                         <a style={{color:'white',textTransform:'capitalize', textDecoration:'none'}} type="application/octet-stream" download="media-speaks.pdf" href={require('../static/download/media-speaks.pdf')}><Button style={{textTransform:'capitalize'}} color="inherit" className="download-button">Media Speaks</Button></a>
                         <br/>
