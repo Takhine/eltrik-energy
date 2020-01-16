@@ -23,7 +23,7 @@ const Eltrik = () => {
                 <Grid item xs={12} md={8} lg={6}>
                     <div className="avenue-description">
                         <p>
-                            <b>“ELTRIK AVENUE”</b>, a pay per use Battery Swap service, which gives access to high-performance “ELTRIK LI-ON” lithium-ion batteries to electric-rickshaw drivers and helps them overcome issues of long charging time, battery maintenance & less mileage. Through “ELTRIK AVENUE”, battery swapping service outlets, we aims to increase the income of e-rickshaw driver by lowering the idle time and providing better mileage per charge compared to the lead-acid battery.
+                            <b>“ELTRIK AVENUE”</b>, a pay per use Battery Swap service, which gives access to high-performance <b>LiFePo4 batteries</b> to electric-rickshaw drivers and helps them overcome issues of long charging time, battery maintenance & less mileage. Through “ELTRIK AVENUE”, battery swapping service outlets, we aims to increase the income of e-rickshaw driver by lowering the idle time and providing better mileage per charge compared to the lead-acid battery.
                     </p>
                         <h3 className="subtitle">Join our network</h3>
                         <p style={{ display: 'inline' }}><b>ELTRIK ENERGY INDIA</b>, proposes to set up “ELTRIK AVENUE” Battery Swapping Service for E-Rickshaw, every few kilometers in metros, class I and class II towns across the country. </p>
@@ -46,14 +46,15 @@ const Eltrik = () => {
                 <Grid item xs={12} md={8} lg={6}>
                     <div className="lion-description">
                         <p>
-                            <b>Eltrik Energy</b> India presents the most advance L-ion Batteries. The batteries are monitored and tracked 24x7 by company developed software for uninterrupted and smooth running.
+                            <b>Eltrik Energy</b> India presents the most advance Lithium Ferro Phosphate battery (LiFePO4 battery). The batteries are monitored and tracked 24x7 by company developed software for uninterrupted and smooth running.
                         </p>
                         <ul>
-                            <li>Smart Lithium Battery</li>
+                            <li>Smart LiFePO4 Battery</li>
+                            <li>Well-defined performance</li>
                             <li>Swap Compatible</li>
                             <li>Indigenously Developed Battery Management System</li>
-                            <li>Longer Life</li>
-                            <li>Faster Charge and Discharge for optimum performance</li>
+                            <li>Long-term stability</li>
+                            <li>Delivers full power until it is discharged</li>
                             <li>Energy Efficiency</li>
                         </ul>
                     </div>
