@@ -102,7 +102,7 @@ const About = () => {
                         </div>
                         <h2 className="card-title">Value</h2>
                         <p className="card-description">
-                            For the rickshaw owners/drivers, lack of access to funds and confidence to try new technology were barriers to upgrading to an electric vehicle (EV) independently. With this in mind, the company has tied up with multiple entities involved in procurring a rerady-to-go drive e-rickshaw. We are a bridge connecting the person to an e-rickshaw.
+                            For the rickshaw owners/drivers, lack of access to funds and confidence to try new technology were barriers to upgrading to an electric vehicle (EV) independently. With this in mind, the company has tied up with multiple entities involved in procurring a ready-to-go drive e-rickshaw. We are a bridge connecting the person to an e-rickshaw.
                         </p>
                     </Card>
                 </Grid>

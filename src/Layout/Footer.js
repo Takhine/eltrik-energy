@@ -70,7 +70,7 @@ const Footer = () => {
                 </Grid>
                 <hr />
                 <div className="copyright">
-                    <small>Copyright © 2019 Eltrik Energy India Private Limited</small>
+                    <small>Copyright © 2019 Eltrik Energy India</small>
                 </div>
             </div>
         </React.Fragment>
