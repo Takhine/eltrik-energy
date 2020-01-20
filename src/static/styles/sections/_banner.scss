@@ -15,7 +15,7 @@
     }
     .banner-message{
         width: 100%;
-        @include mmd{
+        @include lg{
             width: 50%;
 
         }
@@ -29,24 +29,53 @@
             left: 50px;
             position: absolute;
             height: auto;
-            @include mmd{
-                top: 15%;
-                left: 10%;
+            @include msm{
+                left: 8%;
                 width: 100%;
                 z-index: 2;
+                max-width: 300px;
+            }
+            @include mmd{
+                width: 350px;
+                top: 90px;
+            }
+            @include lg{
+                top: 80px;
+                max-width: 350px;
+            }
+            @include mlg{
                 max-width: 450px;
             }
         }
         .banner-description{
             position: absolute;
             top: 130px;
-            left: 10%;
+            left: 8%;
             max-width: 500px;
             height: auto;
             font-size: 10px;
+            @include msm{
+                top: 180px;
+                font-size: $subtitle-font;
+
+            }
             @include mmd{
+                top: 200px;
+                font-size: $title-font;
+                max-width: 80%;
+
+            }
+            @include lg{
+                max-width: 350px;
+                font-size: $default-font;
+                top: 200px;
+            }
+            @include xl{
                 top: 35%;
                 font-size: $subtitle-font;
+            }
+            @include mlg{
+                max-width: 450px;
             }
         }
         img{
@@ -59,17 +88,21 @@
     .banner-info{
         position: relative;
         color:$primary-black;
-        padding: 20px;
-        @include mmd{
+        padding: 10px 20px;
+        @include lg{
             position: absolute;
-            top: 450px;
+            top: 150px;
+            max-width: 300px;
             right: 0;
             background: white;
             color:$primary-black;
-            padding: 30px 20px;
             z-index: 2;
             border-top-left-radius: 8px;
             border-bottom-left-radius: 8px;
+        }
+        @include xl{
+            max-width: 500px;
+            top: 530px;
         }
         h4{
             font-size: $subtitle-font;
@@ -100,7 +133,7 @@
                     div{
                         height: inherit;
                         img{
-                            margin-top: 30px;
+                            margin-top: 60px;
                             @include mmd{
                                 margin-top: 0;
                             }

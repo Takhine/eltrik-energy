@@ -92,10 +92,10 @@ const Banner = () => {
             <BannerSliderMobile nextClick={nextClick} />
             <div id="google_translate_element" />
             <div className="banner-info">
-                <h4>'Eltrik Avenue Station'</h4>
+                <h4>'Eltrik Fuel Station'</h4>
                 <ul>
                     <li>Low Investment as Batteries will be provided on 'wet lease'</li>
-                    <li>No capital cost of installing battery charges at Dealer Outlets</li>
+                    <li>No capital cost of installing battery chargers at Dealer Outlets</li>
                     <li>Shop measuring 150sq.ft onwards road approaching, NOT necessarily in prime area/ main road </li>
                     <li>Investment of Rs 10 lacs towards stocks to start the Dealership</li>
                     <li>Batteries will be monitored and maintained by the Company</li>
