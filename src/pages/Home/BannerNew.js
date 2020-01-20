@@ -7,7 +7,7 @@ import fuel from 'static/images/fuel.png';
 import station from 'static/images/station.png';
 import savari from 'static/images/savari.png';
 
-import fuelSlide from 'static/images/slide-1.png';
+import fuelSlide from 'static/images/slide-1.jpg';
 import stationSlide from 'static/images/slide-2.png';
 import savariSlide from 'static/images/slide-3.png';
 import fuelSlideMobile from 'static/images/slide-1-mobile.jpg';
