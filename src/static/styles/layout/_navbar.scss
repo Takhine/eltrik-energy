@@ -49,7 +49,7 @@
                 a{
                     text-decoration: none;
                 }
-                .download-button{
+                @at-root #download-button{
                     @include primary-button;
                     background-color: $dark-green;
                 }
@@ -60,7 +60,11 @@
         @include primary-button;
         box-shadow: $light-box-shadow;
         background-color: $dark-green;
-        display: none;
+        margin-right: 5px;
+        @include rwd(250,599){
+            display: none;
+        }
+        display: block;
         text-transform: capitalize;
         @include xl{
             display: none;

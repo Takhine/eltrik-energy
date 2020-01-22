@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 // Libraries
 import Slider from 'react-slick';
-
+import {Button} from '@material-ui/core';
 // images
 import fuel from 'static/images/fuel.png';
 import station from 'static/images/station.png';
@@ -91,6 +91,7 @@ const Banner = () => {
             <BannerSlider nextClick={nextClick} />
             <BannerSliderMobile nextClick={nextClick} />
             <div id="google_translate_element" />
+            <a className="mobile-button-bottom" style={{ textDecoration: 'none',marginTop:'5px' }} type="application/octet-stream" download="enquiry-form.pdf" href={require('static/download/enquiry-form.pdf')}><Button style={{marginTop:'5px',margin:'auto'}}  id="download-button">Download Form</Button></a>
             <div className="banner-info">
                 <h4>'Eltrik Fuel Station'</h4>
                 <ul>

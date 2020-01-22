@@ -55,7 +55,7 @@ const NavMenu = (props) => {
             <li><Link activeClass="active" to="benefits" spy={true} smooth={true} duration={500}><Button color="inherit" onClick={props.onClose}>Benefits</Button></Link></li>
             <li><Link activeClass="active" to="about" spy={true} smooth={true} duration={500}><Button color="inherit" onClick={props.onClose}>About</Button></Link></li>
             <li><Link activeClass="active" to="eltrik" spy={true} smooth={true} duration={500}><Button color="inherit" onClick={props.onClose}>Eltrik Avenue</Button></Link></li>
-            <li><a style={{ textDecoration: 'none' }} type="application/octet-stream" download="enquiry-form.pdf" href={require('../static/download/enquiry-form.pdf')}><Button color="inherit" className="download-button">Download Form</Button></a></li>
+            <li><a style={{ textDecoration: 'none' }} type="application/octet-stream" download="enquiry-form.pdf" href={require('../static/download/enquiry-form.pdf')}><Button color="inherit" id="download-button">Download Form</Button></a></li>
         </ul>
     );
 }
@@ -99,7 +99,8 @@ const Navbar = (props) => {
                     <div className="section-desktop">
                         <NavMenu />
                     </div>
-                    <Button className="mobile-button">Download Form</Button>
+                    <a style={{ textDecoration: 'none',marginTop:'5px',display:'block',marginRight:'5px' }} type="application/octet-stream" download="enquiry-form.pdf" href={require('static/download/enquiry-form.pdf')}><Button style={{marginTop:'5px',margin:'auto'}} className="mobile-button" id="download-button">Download Form</Button></a>
+
                 </Toolbar>
             </AppBar>
         </HideonScroll>
