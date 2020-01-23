@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 // Libraries
 import Slider from 'react-slick';
-import {Button} from '@material-ui/core';
+import { Button } from '@material-ui/core';
 // images
 import fuel from 'static/images/fuel.png';
 import station from 'static/images/station.png';
@@ -24,12 +24,12 @@ const settings = {
     slidesToShow: 1,
     slidesToScroll: 1,
     fade: true,
-    accessibility:false,
-    draggable:false,
-    focusOnSelect:false,
-    pauseOnHover:false,
-    pauseOnFocus:false,
-    swipe:false,
+    accessibility: false,
+    draggable: false,
+    focusOnSelect: false,
+    pauseOnHover: false,
+    pauseOnFocus: false,
+    swipe: false,
 }
 
 const BannerSlider = (props) => {
@@ -63,19 +63,19 @@ const BannerSliderMobile = (props) => {
     )
 }
 const Banner = () => {
-    const[slide,setSlide]=useState(0);
-    const[slideValue,setSlideValue]=useState(fuel)
+    const [slide, setSlide] = useState(0);
+    const [slideValue, setSlideValue] = useState(fuel)
 
-    const nextClick=(e)=>{
+    const nextClick = (e) => {
         setSlide(e);
-        if(slide===0){
+        if (slide === 0) {
             setSlideValue(fuel);
         }
-        else if(slide===1){
+        else if (slide === 1) {
             setSlideValue(station);
-            
+
         }
-        else if(slide===2){
+        else if (slide === 2) {
             setSlideValue(savari);
 
         }
@@ -83,15 +83,19 @@ const Banner = () => {
     return (
         <div className="banner">
             <div className="banner-message">
-            <img className="image-title" src={slideValue} alt={slideValue} />
+                <img className="image-title" src={slideValue} alt={slideValue} />
 
-            <p className="banner-description">Adopting the marketing model of Petrol Pumps the company offers to supply fully charged <b>'Eltrik Energy' batteries</b> (<i>Lithium</i> LiFePo4) on "Pay-Per-Use" basis. Being a cash and carry model, the business involves low investment and high cash profit generation on a daily basis. <br/><br/> <b>Inviting Dealers for establishing India's First 'Pay-Per-Use' Swapping Stations!</b></p>
+                <p className="banner-description">Adopting the marketing model of Petrol Pumps the company offers to supply fully charged <b>'Eltrik Energy' batteries</b> (<i>Lithium</i> LiFePo4) on "Pay-Per-Use" basis. Being a cash and carry model, the business involves low investment and high cash profit generation on a daily basis. <br /><br /> <b>Inviting Dealers for establishing India's First 'Pay-Per-Use' Swapping Stations!</b></p>
             </div>
 
             <BannerSlider nextClick={nextClick} />
             <BannerSliderMobile nextClick={nextClick} />
             <div id="google_translate_element" />
-            <a className="mobile-button-bottom" style={{ textDecoration: 'none',marginTop:'5px' }} type="application/octet-stream" download="enquiry-form.pdf" href={require('static/download/enquiry-form.pdf')}><Button style={{marginTop:'5px',margin:'auto'}}  id="download-button">Download Form</Button></a>
+            <div className="mobile-button-bottom-container">
+                <a className="mobile-button-bottom" style={{ textDecoration: 'none', marginTop: '5px' }} type="application/octet-stream" download="enquiry-form.pdf" href={require('static/download/enquiry-form.pdf')}><Button style={{ marginTop: '5px', margin: 'auto' }} id="download-button">Download Form</Button></a>
+                <a className="mobile-button-bottom" style={{ textDecoration: 'none', marginTop: '5px', marginRight: '5px' }} target="_blank"  href="http://pay.eltrik.in/index.aspx"><Button style={{ marginTop: '5px', margin: 'auto' }} id="download-button" className="pay">Pay Online</Button></a>
+            </div>
+
             <div className="banner-info">
                 <h4>'Eltrik Fuel Station'</h4>
                 <ul>
@@ -103,7 +107,7 @@ const Banner = () => {
                     <li>The Company will supply charged batteries on daily basis</li>
                 </ul>
             </div>
-            
+
         </div>
     );
 }

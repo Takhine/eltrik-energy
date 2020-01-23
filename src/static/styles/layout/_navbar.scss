@@ -12,7 +12,7 @@
             height: 40px;
         }
         margin-left: 16px;
-        @include xl{
+        @include mlg{
             margin: unset;
         }
     }
@@ -22,7 +22,7 @@
     }
     .menu-button{
         display: inline;
-        @include xl{
+        @include mlg{
             display: none;
         }
         .MuiSvgIcon-root{
@@ -31,7 +31,7 @@
     }
     .section-desktop{
         display: none;
-        @include xl{
+        @include mlg{
             display: block;
         }
         .nav-menu{
@@ -52,6 +52,9 @@
                 @at-root #download-button{
                     @include primary-button;
                     background-color: $dark-green;
+                    &.pay{
+                        background-color: $primary-blue;
+                    }
                 }
             }
         }
@@ -66,7 +69,7 @@
         }
         display: block;
         text-transform: capitalize;
-        @include xl{
+        @include mlg{
             display: none;
         }
     }

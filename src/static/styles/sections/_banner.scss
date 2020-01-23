@@ -13,6 +13,12 @@
         height: 100vh;
         }
     }
+    .mobile-button-bottom-container{
+        display: flex;
+        justify-content: space-evenly;
+        max-width: 350px;
+        margin: auto;
+    }
     .mobile-button-bottom{
         display: block;
         @include msm{
