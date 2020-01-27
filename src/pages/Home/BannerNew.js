@@ -92,8 +92,8 @@ const Banner = () => {
             <BannerSliderMobile nextClick={nextClick} />
             <div id="google_translate_element" />
             <div className="mobile-button-bottom-container">
-                <a className="mobile-button-bottom" style={{ textDecoration: 'none', marginTop: '5px' }} type="application/octet-stream" download="enquiry-form.pdf" href={require('static/download/enquiry-form.pdf')}><Button style={{ marginTop: '5px', margin: 'auto' }} id="download-button">Download Form</Button></a>
-                <a className="mobile-button-bottom" style={{ textDecoration: 'none', marginTop: '5px', marginRight: '5px' }} target="_blank"  href="http://pay.eltrik.in/index.aspx"><Button style={{ marginTop: '5px', margin: 'auto' }} id="download-button" className="pay">Pay Online</Button></a>
+                {/*<a className="mobile-button-bottom" style={{ textDecoration: 'none', marginTop: '5px' }} type="application/octet-stream" download="enquiry-form.pdf" href={require('static/download/enquiry-form.pdf')}><Button style={{ marginTop: '5px', margin: 'auto' }} id="download-button">Download Form</Button></a> */}
+                <a className="mobile-button-bottom" style={{ textDecoration: 'none', marginTop: '5px', marginRight: '5px' }} target="_blank"  href="https://pay.eltrik.in/index.aspx"><Button style={{ marginTop: '5px', margin: 'auto' }} id="download-button" className="pay">Download Form</Button></a>
             </div>
 
             <div className="banner-info">
