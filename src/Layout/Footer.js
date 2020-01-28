@@ -35,6 +35,8 @@ const Footer = () => {
                         <a style={{color:'white',textTransform:'capitalize', textDecoration:'none'}} type="application/octet-stream" download="media-speaks.pdf" href={require('../static/download/media-speaks.pdf')}><Button style={{textTransform:'capitalize'}} color="inherit" className="download-button">Media Speaks</Button></a>
                         <br/>
                         <a style={{color:'white',textTransform:'capitalize', textDecoration:'none'}} type="application/octet-stream" download="t-and-c.pdf" href={require('../static/download/t-and-c.pdf')}><Button style={{textTransform:'capitalize'}} color="inherit" className="download-button">Terms &amp; Conditions</Button></a>
+                        <br/>
+                        <a style={{color:'white',textTransform:'capitalize', textDecoration:'none'}} target="_blank" rel="noopener noreferrer"  href="https://pay.eltrik.in/index.aspx"><Button style={{textTransform:'capitalize'}} color="inherit">Download Dealership Form</Button></a>
                         </div>
                     </Grid>
                     <Grid item xs={12} sm={6} md={4}>

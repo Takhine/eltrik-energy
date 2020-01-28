@@ -29,7 +29,7 @@ const Eltrik = () => {
                         <p style={{ display: 'inline' }}><b>ELTRIK ENERGY INDIA</b>, proposes to set up “ELTRIK AVENUE” Battery Swapping Stations for E-Rickshaw, every few kilometers in metros, class I and class II towns across the country. </p>
                         { /*<a href="#" className="requirements-link">Requirements</a>*/}
                         <h3 className="subtitle">Download Dealership Form</h3>
-                        <a style={{ textDecoration: 'none' }} type="application/octet-stream" download="enquiry-form.pdf" href={require('../../static/download/enquiry-form.pdf')}><Button className="download-button">Download</Button></a>
+                        <a style={{ textDecoration: 'none', marginTop: '5px', display: 'block', marginRight: '5px' }} target="_blank" rel="noopener noreferrer" href="https://pay.eltrik.in/index.aspx"><Button style={{ marginTop: '5px',backgroundColor:'#0087C2' }} className="mobile-button" id="download-button">Download Form</Button></a>
                     </div>
                 </Grid>
             </Grid>

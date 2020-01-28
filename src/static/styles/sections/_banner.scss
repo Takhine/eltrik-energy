@@ -18,6 +18,8 @@
         justify-content: space-evenly;
         max-width: 350px;
         margin: auto;
+        z-index: 3;
+        position: relative;
     }
     .mobile-button-bottom{
         display: block;

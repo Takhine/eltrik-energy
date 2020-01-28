@@ -20,6 +20,10 @@ hr{
     }
 }
 
+button{
+    z-index: 3;
+    position: relative;
+}
 .desktop{
     display: none;
     @include lg{

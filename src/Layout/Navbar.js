@@ -56,7 +56,7 @@ const NavMenu = (props) => {
             <li><Link activeClass="active" to="about" spy={true} smooth={true} duration={500}><Button color="inherit" onClick={props.onClose}>About</Button></Link></li>
             <li><Link activeClass="active" to="eltrik" spy={true} smooth={true} duration={500}><Button color="inherit" onClick={props.onClose}>Eltrik Avenue</Button></Link></li>
             {/*<li><a style={{ textDecoration: 'none' }} type="application/octet-stream" download="enquiry-form.pdf" href={require('../static/download/enquiry-form.pdf')}><Button color="inherit" id="download-button">Download Form</Button></a></li> */}
-            <li><a style={{ textDecoration: 'none', display: 'block', marginRight: '5px' }} target="_blank"  href="https://pay.eltrik.in/index.aspx"><Button color="inherit" id="download-button" className="pay">Download Form</Button></a></li>
+            <li><a style={{ textDecoration: 'none', display: 'block', marginRight: '5px' }} target="_blank" rel="noopener noreferrer"  href="https://pay.eltrik.in/index.aspx"><Button color="inherit" id="download-button" className="pay">Download Form</Button></a></li>
         </ul>
     );
 }
@@ -101,7 +101,7 @@ const Navbar = (props) => {
                         <NavMenu />
                     </div>
                     {/*<a style={{ textDecoration: 'none', marginTop: '5px', display: 'block', marginRight: '5px' }} type="application/octet-stream" download="enquiry-form.pdf" href={require('static/download/enquiry-form.pdf')}><Button style={{ marginTop: '5px', margin: 'auto' }} className="mobile-button" id="download-button">Download Form</Button></a>*/}
-                    <a style={{ textDecoration: 'none', marginTop: '5px', display: 'block', marginRight: '5px' }} target="_blank"  href="https://pay.eltrik.in/index.aspx"><Button style={{ marginTop: '5px', margin: 'auto', backgroundColor:'#0087C2' }} className="mobile-button" id="download-button">Download Form</Button></a>
+                    <a style={{ textDecoration: 'none', marginTop: '5px', display: 'block', marginRight: '5px' }} target="_blank" rel="noopener noreferrer"  href="https://pay.eltrik.in/index.aspx"><Button style={{ marginTop: '5px', margin: 'auto', backgroundColor:'#0087C2' }} className="mobile-button" id="download-button">Download Form</Button></a>
 
                 </Toolbar>
             </AppBar>
